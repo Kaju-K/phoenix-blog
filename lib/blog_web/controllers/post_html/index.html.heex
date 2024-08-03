@@ -12,6 +12,7 @@
   <:actions>
     <.button>Search</.button>
   </:actions>
+  <.link patch={~p"/posts"}>Reset search</.link>
 </.simple_form>
 
 <.table id="posts" rows={@posts} row_click={&JS.navigate(~p"/posts/#{&1}")}>
